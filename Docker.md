@@ -148,4 +148,3 @@ Registry: Repository of docker images
 - Run a Docker Container in a network: ***docker run -d --network <network-name> --network-alias <network-alias>  -v todo-mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=todos mysql:5.7***
 - Scan Image: ***docker scan <image-name>***
 - Ignore files to be copied when building docker image - Use ***.dockerignore*** file
-- Test
