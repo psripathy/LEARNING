@@ -18,3 +18,17 @@ EXPONENTIAL   O(2^n)
 ***Queue - FIFO***
 Time Complexity - Enqueue, Dequeue, isEmpty, peek or front = O(1)
 Space Complexity - O(n)
+
+***Stack - LIFO***
+Time Complexity - push, pop, peek = O(1)
+Space Complexity - O(n)
+
+***Breadth First Search - Queue is used to implement***
+Finding shortest path in unweighted graph. eg. Wall & Gates, No. of Islands, Open the lock etc.
+Time Complexity - O(V+E) - V is vertices, E is edges
+Space Complexity - O(n)
+
+***Depth First Search - Stack is used to implement***
+Finding shortest path in unweighted graph. eg. Wall & Gates, No. of Islands, Open the lock
+Time Complexity - O(V+E) - V is vertices, E is edges
+Space Complexity - O(n)
