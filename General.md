@@ -14,7 +14,7 @@ https://www.thorntech.com/sql-vs-nosql/
 
 
 **NoSQL Databases**
-***Mongo DB Vs Cassandra***
+***Mongo DB Vs Cassandra/DynamoDB***
 - 1 master, multiple slave **Vs** Multiple master/slave configuration - because of this reason write performance of Cassandra is better
 - Write requests goes only to master, hence less scalable for write operation **Vs** Multiple master node makes writing more scalable
 - Possibility of downtime (20-30 secs) when the master goes down until the slave becomes master **Vs** because of multiple master it is highly available
