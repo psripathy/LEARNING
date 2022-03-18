@@ -1,6 +1,6 @@
 ## 				**<u>Interview Tips</u>**
 
-System Design
+**System Design**
 
 - Talk about creating spreadsheet for CICD tool evaluation listing features vs requirements vs current capability and cost to implement in current tool set vs new ones. Also weighted desired capabilities for future and measure against timeline
 - Talk about working with Temenos/Quintin for automating DL Deploy, UXP build, Visualizer build
