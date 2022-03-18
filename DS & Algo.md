@@ -24,11 +24,11 @@ Time Complexity - push, pop, peek = O(1)
 Space Complexity - O(n)
 
 ***Breadth First Search - Queue is used to implement***
-Finding shortest path in unweighted graph. eg. Wall & Gates, No. of Islands, Open the lock etc.
+Used mostly in finding shortest path in unweighted graph. eg. Wall & Gates, No. of Islands, Open the lock etc.
 Time Complexity - O(V+E) - V is vertices, E is edges
-Space Complexity - O(n)
+Space Complexity - O(V)
 
 ***Depth First Search - Stack is used to implement***
-Finding shortest path in unweighted graph. eg. Wall & Gates, No. of Islands, Open the lock
+Can also be used to find from root to target node. Can also be used to find connected components, determine connectivity, find bridges. eg. No of Islands, clone graph, target sum etc.
 Time Complexity - O(V+E) - V is vertices, E is edges
-Space Complexity - O(n)
+Space Complexity - O(V)
