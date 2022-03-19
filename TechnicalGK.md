@@ -1,6 +1,4 @@
-## 				**<u>General Items to know</u>**
-
-**SQL Vs NoSQL Databases**
+## **SQL Vs NoSQL Databases**
 
 https://www.thorntech.com/sql-vs-nosql/
 
@@ -14,6 +12,7 @@ https://www.thorntech.com/sql-vs-nosql/
 
 
 **NoSQL Databases**
+
 ***Mongo DB Vs Cassandra/DynamoDB***
 - 1 master, multiple slave **Vs** Multiple master/slave configuration - because of this reason write performance of Cassandra is better
 - Write requests goes only to master, hence less scalable for write operation **Vs** Multiple master node makes writing more scalable
@@ -22,3 +21,13 @@ https://www.thorntech.com/sql-vs-nosql/
 - Suuports BSON, JSON data format **Vs** JSON only
 - Supports unstructured/nested data **Vs** Data still stored in rows/cols (just not relational)
 - Both support Sharding/Horizontal Partitioning
+
+
+## XMPP Vs WSS
+https://www.cometchat.com/blog/xmpp-vs-websockets-instant-messaging-protocol-comparison#:~:text=XMPP%20only%20allows%20you%20to,I%20should%20be%20using%20WebSocket.%22
+
+Both creates persistent connection between client and server.
+
+***XMPP*** Extensible Messaging and Presence Protocol
+Each client has has unique Jabber ID user@domain.com/resource
+***WSS*** Web Socket Secured protocol
