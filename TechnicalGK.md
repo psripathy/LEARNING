@@ -28,7 +28,8 @@ https://www.cometchat.com/blog/xmpp-vs-websockets-instant-messaging-protocol-com
 
 Both creates persistent connection between client and server.
 
-***XMPP*** Extensible Messaging and Presence Protocol. 
+***XMPP*** - Extensible Messaging and Presence Protocol. 
 Each client has has unique Jabber ID user@domain.com/resource. 
 <img src="./images/XMPP_arch.jpeg" width="90%" height="70%"/>. 
-***WSS*** Web Socket Secured protocol. 
+
+***WSS*** - Web Socket Secured protocol. 
