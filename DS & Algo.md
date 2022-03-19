@@ -28,7 +28,7 @@ Used mostly in finding shortest path in unweighted graph. eg. Wall & Gates, No. 
 Time Complexity - O(V+E) - V is vertices, E is edges
 Space Complexity - O(V)
 
-***Depth First Search - Stack is used to implement***
+***Depth First Search - Recursion is used to implement*** (which translates to using Stack for method calls in the background)
 Can also be used to find from root to target node. Can also be used to find connected components, determine connectivity, find bridges. eg. No of Islands, clone graph, target sum etc.
 Time Complexity - O(V+E) - V is vertices, E is edges
 Space Complexity - O(V)
