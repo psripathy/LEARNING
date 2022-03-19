@@ -1,1 +1,1 @@
-![Set Interface](./images/SetInJava.png)
+![Set Interface](./images/SetinJava.png)
