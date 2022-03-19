@@ -6,5 +6,5 @@ HashSet uses HashMap in its implementation to store objects. Values for Set are 
 There is also PriorityBlockingQueue. 
 
 ## **Map Interface**. 
-<img src="./images/map_hierarchy.png" width="100%" height="70%">. 
+<img src="./images/map_hierarchy.png" width="80%" height="45%">. 
 There is also ***EnumMap implements Map*** whose keys are values of an enum. 
