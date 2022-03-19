@@ -1,6 +1,6 @@
 ## **List Interface**
 **Queue**
-![Queue Interface](./images/QinJava.png)
+<img src="./images/QinJava.png" width="75%" height="40%">
 
 ## **Set Interface**
-![Set Interface](./images/SetinJava.png)
+<img src="./images/SetinJava.png" width="75%" height="40%">
