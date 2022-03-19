@@ -2,6 +2,7 @@
 <img src="./images/java-collection-hierarchy.png" width="100%" height="70%">. 
 
 HashSet uses HashMap in its implementation to store objects. Values for Set are stored as Keys in HashMap with a constant value PRESENT. 
+
 There is also PriorityBlockingQueue. 
 
 ## **Map Interface**. 
