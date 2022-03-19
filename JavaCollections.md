@@ -5,3 +5,4 @@ HashSet uses HashMap in its implementation to store objects. Values for Set are 
 
 ## **Map Interface**
 <img src="./images/map_hierarchy.png" width="100%" height="70%">
+There is also ***EnumMap implements Map*** whose keys are values of an enum.
