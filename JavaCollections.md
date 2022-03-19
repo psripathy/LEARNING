@@ -1,10 +1,5 @@
-## **List Interface**
-<img src="./images/Collections.png" width="100%" height="100%">
+## **Collection Interface**
+<img src="./images/java-collection-hierarchy.png" width="100%" height="70%">
 
-## **List Interface**
-**Queue**
-
-<img src="./images/QinJava.png" width="75%" height="40%">
-
-## **Set Interface**
-<img src="./images/SetinJava.png" width="75%" height="40%">
+## **Map Interface**
+<img src="./images/map-hierarchy.png" width="100%" height="70%">
