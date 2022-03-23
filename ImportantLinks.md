@@ -9,3 +9,6 @@ https://docs.automationanywhere.com/bundle/iq-bot-v6.5/page/iq-bot/topics/iq-bot
 
 Grokking coding interview. 
 https://designgurus.org/path-player?courseid=grokking-the-coding-interview&unit=grokking-the-coding-interview_1628744657086_130Unit
+
+Paid. 
+https://www.educative.io/courses/grokking-the-coding-interview/
