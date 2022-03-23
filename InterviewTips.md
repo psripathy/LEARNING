@@ -2,6 +2,7 @@
 
 **System Design**
 
+- Talk about how enabled federation for proxy servlet/created Saml util for SSO
 - Talk about creating spreadsheet for CICD tool evaluation listing features vs requirements vs current capability and cost to implement in current tool set vs new ones. Also weighted desired capabilities for future and measure against timeline
 - Talk about working with Temenos/Quintin for automating DL Deploy, UXP build, Visualizer build
 - Experience with Fujitsu project discussion on Liferay Portal and my role.
