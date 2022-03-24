@@ -5,6 +5,8 @@ Micronaut (MicroService).
 https://micronaut.io/. 
 
 Self Signed Certificate. 
+https://medium.com/@francisyzy/create-aws-elb-with-self-signed-ssl-cert-cd1c352331f. 
+
 https://docs.automationanywhere.com/bundle/iq-bot-v6.5/page/iq-bot/topics/iq-bot/install/creating-self-signed-certificate-with-san.html
 
 Grokking coding interview. 
