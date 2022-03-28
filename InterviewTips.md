@@ -25,6 +25,6 @@
 I was really intrigued by the industry that Veeva systems cloud based software is catering to which is very different from the finance, insurance or health care that I have mostly worked on so far. Also the core values of Veeva like "Do the Right Thing" and "Employee success" really caught my attention.
 
 **How do you define success**
-I would define success at work as learning/improving. For example the two good success stories I would point to couple of instances from my work 
+I would define success at work as learning or measurable improvement. For example I would point to two success stories from my work 
 1. Automation of the deployment process for a Vendor product artifacts, where I had to challenge the vendor on their idea of tracking changes. We started out with no idea and came out with a solution at the end was very satisfying.
 2. The Business Connect portal application had lot of stability and time to market issues which we addressed as a team and the results where measurable against previous benchmark and doing that as a team was even more fun/satisfying.
