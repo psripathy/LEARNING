@@ -8,3 +8,4 @@ Interview Questions
 6. What is your compensation expectation
 7. 2 strengths & 1 weakness
 8. Why are you looking for a change, because you were at CMA for so long. What do you like there and what do you think should change there? What do you expect to see in your next work place?
+9. Don't see you at the Principal Engineer Level but more as a Senior Engineer level. Are you willing to accept that role?
