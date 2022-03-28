@@ -24,4 +24,4 @@
 I was really intrigued by the industry that Veeva systems cloud based software is catering to which is very different from the finance, insurance or health care that I have mostly worked on so far. Also the core values of Veeva like "Do the Right Thing" and "Employee success" really caught my attention.
 
 **How do you define success**
-I would define success as happiness or more specifically at work happiness is sense of acheivement as a team. Everyone in the team should feel that they hae contributed to the success.
+I would define success as happiness or more specifically happiness at work is looking forward to taking a challenge as a team and solving it. The sense of acheivement while doing that as a team. Everyone in the team should feel that they have contributed to the success.
