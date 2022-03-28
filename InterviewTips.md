@@ -17,3 +17,11 @@
 - Talk about working with Temenos/Quintin for automating DL Deploy, UXP build, Visualizer build
 - Experience with Fujitsu project discussion on Liferay Portal and my role.
 - May be talk about how I use data to make personal life decisions like creating spread sheet for criteria and assigning weights to them (example. US vs India), Various cities option etc.
+
+
+
+**Why Veeva**
+I was really intrigued by the industry that Veeva systems cloud based software is catering to which is very different from the finance, insurance or health care that I have mostly worked on so far. Also the core values of Veeva like "Do the Right Thing" and "Employee success" really caught my attention.
+
+**How do you define success**
+I would define success as happiness or more specifically at work happiness is sense of acheivement as a team. Everyone in the team should feel that they hae contributed to the success.
