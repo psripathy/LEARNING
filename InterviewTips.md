@@ -14,6 +14,7 @@
 
 - Talk about how enabled federation for proxy servlet/created Saml util for SSO
 - Talk about creating spreadsheet for CICD tool evaluation listing features vs requirements vs current capability and cost to implement in current tool set vs new ones. Also weighted desired capabilities for future and measure against timeline
+- Bringing CATBatch execution time from few hours to about 20+ mins.
 - Talk about working with Temenos/Quintin for automating DL Deploy, UXP build, Visualizer build
 - Experience with Fujitsu project discussion on Liferay Portal and my role.
 - May be talk about how I use data to make personal life decisions like creating spread sheet for criteria and assigning weights to them (example. US vs India), Various cities option etc.
@@ -24,4 +25,6 @@
 I was really intrigued by the industry that Veeva systems cloud based software is catering to which is very different from the finance, insurance or health care that I have mostly worked on so far. Also the core values of Veeva like "Do the Right Thing" and "Employee success" really caught my attention.
 
 **How do you define success**
-I would define success at work is looking forward to taking new challenges with your team and completing it and the sense of acheivement while doing that as a team. Everyone in the team should feel that they have contributed to the success and come out of it with some learning.
+I would define success at work as learning/improving. For example the two good success stories I would point to couple of instances from my work 
+1. Automation of the deployment process for a Vendor product artifacts, where I had to challenge the vendor on their idea of tracking changes. We started out with no idea and came out with a solution at the end was very satisfying.
+2. The Business Connect portal application had lot of stability and time to market issues which we addressed as a team and the results where measurable against previous benchmark and doing that as a team was even more fun/satisfying.
