@@ -17,6 +17,7 @@ Has product suite that that includes Data Catalog to discover & classify data, D
 **Code Review**
 - General good coding practices like good naming convention, smaller functions/methods that do one unit of work, proper logging and exception handling.
 - Also look if resources are being released properly. Look for opportunities to cache information.
+- Another important thing I look for is unit test/code coverage.
 
 **System Design**
 
