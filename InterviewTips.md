@@ -19,6 +19,9 @@ Has product suite that that includes Data Catalog to discover & classify data, D
 - Also look if resources are being released properly. Look for opportunities to cache information.
 - Another important thing I look for is unit test/code coverage.
 
+**Java 8 Vs Java 11**
+Starting Java 11 free Oracle JDK was stopped. Arrays class was introduced. HttpClient was introduced. Not sure if some changes to collections were introduced. I believe you don;t have to run javac to compile java program. Just directly call java Class.java.
+
 **System Design**
 
 - Talk about how enabled federation for proxy servlet/created Saml util for SSO
