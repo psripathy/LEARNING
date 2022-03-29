@@ -9,6 +9,12 @@
 - I also worked on the largest revenue application for Comerica bank which is their business connect portal for treasury division. I have owned the development and upgrade responsibilities for the portal and worked very closely with the embedded IAM specialists in the team. I am particulary proud of two techinical ideas that I brought to the table that cut down down the new app integration timelines in to the portal from couple of months to couple of weeks and also addressed the availabiltiy issues of the portal.
 - I would like to further mature in the Principal Engineer role where I would like to take greater challenges and adapt and build new technical capabilities. Wanting to learn and not shy of challenges are my strengths.
 
+**Why Collibra/What Collibra does**
+I was always intrigued and wanting to know more about what happens on the data space, how data is being used, and how is it different from application development and that drove my intereset in Collibra.
+Collibra builds solutions that help manage/reduce the complexity of data management.
+Has product suite that that includes Data Catalog to discover & classify data, Data lineage that maps relationship between data from different teams providing enterprise level data context. Also has solution for Data Privacy by managing policies across privacy lifecycle of data.
+
+
 
 **System Design**
 
