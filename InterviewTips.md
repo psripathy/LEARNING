@@ -14,7 +14,9 @@ I was always intrigued and wanting to know more about what happens on the data s
 Collibra builds solutions that help manage/reduce the complexity of data management.
 Has product suite that that includes Data Catalog to discover & classify data, Data lineage that maps relationship between data from different teams providing enterprise level data context. Also has solution for Data Privacy by managing policies across privacy lifecycle of data.
 
-
+**Code Review**
+- General good coding practices like good naming convention, smaller functions/methods that do one unit of work, proper logging and exception handling.
+- Also look if resources are being released properly. Look for opportunities to cache information.
 
 **System Design**
 
