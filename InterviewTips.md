@@ -9,18 +9,13 @@
 - I also worked on the largest revenue application for Comerica bank which is the business connect portal for treasury division. I have owned the development and upgrade responsibilities for the portal and worked very closely with the embedded IAM specialists in the team. I am particulary proud of two techinical ideas that I brought to the table that cut down the new app integration timelines in to the portal from couple of months to couple of weeks and also addressed the availabiltiy issues of the portal. I mostly worked on backend JAVA development (JSR 286/168 spec), Front End development and also IAM.
 - I would like to further mature in the Principal Engineer role where I would like to take greater challenges and adapt and build new technical capabilities. Wanting to learn and not shy of challenges are my strengths.
 
-**Why Collibra/What Collibra does**
-I was always intrigued and wanting to know more about what happens on the data space, how data is being used, and how is it different from application development and that drove my intereset in Collibra.
-Collibra builds solutions that help manage/reduce the complexity of data management.
-Has product suite that that includes Data Catalog to discover & classify data, Data lineage that maps relationship between data from different teams providing enterprise level data context. Also has solution for Data Privacy by managing policies across privacy lifecycle of data.
-
 **Code Review**
 - General good coding practices like good naming convention, smaller functions/methods that do one unit of work, proper logging and exception handling.
 - Also look if resources are being released properly. Look for opportunities to cache information.
 - Another important thing I look for is unit test/code coverage.
 
 **Java 8 Vs Java 11**
-Starting Java 11 free Oracle JDK was stopped. Arrays class was introduced. HttpClient was introduced. Not sure if some changes to collections were introduced. I believe you don;t have to run javac to compile java program. Just directly call java Class.java.
+Starting Java 11 free Oracle JDK was stopped. Arrays class was introduced. HttpClient was introduced. Not sure if some changes to collections were introduced. I believe you don't have to run javac to compile java program. Just directly call java Class.java.
 
 **System Design**
 
@@ -30,11 +25,6 @@ Starting Java 11 free Oracle JDK was stopped. Arrays class was introduced. HttpC
 - Talk about working with Temenos/Quintin for automating DL Deploy, UXP build, Visualizer build
 - Experience with Fujitsu project discussion on Liferay Portal and my role.
 - May be talk about how I use data to make personal life decisions like creating spread sheet for criteria and assigning weights to them (example. US vs India), Various cities option etc.
-
-
-
-**Why Veeva**
-I was really intrigued by the industry that Veeva systems cloud based software is catering to which is very different from the finance, insurance or health care that I have mostly worked on so far. Also the core values of Veeva like "Do the Right Thing" and "Employee success" really caught my attention.
 
 **How do you define success**
 I would define success at work as learning or measurable improvement. For example I would point to two success stories from my work 
