@@ -9,7 +9,7 @@
 1 Hiring Manager. 
 
 
-**Technical Lead. **
+**Technical Lead.**
 
 1 Coding Exercise.
 
