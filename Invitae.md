@@ -1,4 +1,4 @@
-Staff Software Engineer. 
+**Staff Software Engineer.** 
 
 2 Coding Exercises. 
 
@@ -9,7 +9,7 @@ Staff Software Engineer.
 1 Hiring Manager. 
 
 
-Technical Lead. 
+**Technical Lead. **
 
 1 Coding Exercise.
 
