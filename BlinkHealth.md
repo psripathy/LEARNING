@@ -9,7 +9,7 @@ Find improvements needed in the code.
 
 Make changes and get it ready for deploy. 
 
-L5: Speak about atleast 4-6 issues. 
+L5: Speak about atleast 4-6 issues in the code. 
 
 L6: Improve the DataStructure/Refactor the code. 
 
