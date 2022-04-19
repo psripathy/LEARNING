@@ -1,13 +1,13 @@
 ## **Storage Options** ##
-**Cache**
+**Cache**. 
 Options: Redis, Memcache
 Use: Redis (Redis is an modern version of Memcache). Redis understands data structures like list etc, so performing list append fast in Redis wrt Memcache which sees all values as a blob.
 
-**File storage**
+**File storage**. 
 Why? To store images, videos, files etc. These are blob storages. DBMS is used when we have to query on the data. But file is something we just serve.
 Options: S3
 
-**Text search engine**
+**Text search engine**. 
 Why?
 Netflix: search for a movie
 Amazon: search for a product
@@ -15,16 +15,16 @@ Uber: search for a location
 Options: Elastic Search, Solar (build over lucene)
 Important: They are search engines, not databases. They give availability and redundancy but no guarantee on data, so data may be lost. Store critical data somewhere else.
 
-**Fuzzy text search**
+**Fuzzy text search**. 
 Why? User may type wrong spelling. For eg, instead of Airport, may type Ariport.
 Options: Elasticsearch, Solar
 
-**Timeseries database**
+**Timeseries database**. 
 Why? For metrics
 Options: InfluxDB, OpenTSDB 
 Note: These are kind of RDBMS with some customization. In it, user will write always in append-only mode and wont edit old data. Also, queries will be bulk queries on a time range. So, optimized for that.
 
-**Data Warehouse/ Big Data**
+**Data Warehouse/ Big Data**. 
 Why? Want to store huge data for analytics. Eg for Amazon, which country giving more revenue, which geography has more transactions, which product sold where most etc.
 Options: Hadoop
 Note: This is more for offline processing.
