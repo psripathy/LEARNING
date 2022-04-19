@@ -66,7 +66,8 @@ Options: MongoDB, CouchBase
 
 Why? When data is ever increasing. 
 
-Eg, Uber drivers keep sending their location data every few minutes. And if drivers keep increasing, data will keep growing exponentially. But queries will be low only on this huge data, like what locations for a given driver id.
+Eg, Uber drivers keep sending their location data every few minutes. And if drivers keep increasing, data will keep growing exponentially. Limited set of queries, like what locations for a given driver id.
+of queries, like what locations for a given driver id.
 
 Options: Cassandra, Hbase
 
