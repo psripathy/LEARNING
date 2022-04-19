@@ -1,5 +1,6 @@
 ## **Storage Options** ##
-**Cache**. 
+**Cache**
+
 Options: Redis, Memcache
 Use: Redis (Redis is an modern version of Memcache). Redis understands data structures like list etc, so performing list append fast in Redis wrt Memcache which sees all values as a blob.
 
