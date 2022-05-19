@@ -103,7 +103,9 @@ Registry: Repository of docker images
 
 
 
-##### <u>DockerFile Tags</u>
+##### <u>DockerFile</u>
+
+The Dockerfile is essentially the build instructions to build the image.
 
 1. **ADD** - Copy new files/directories/*<u>remote file URL</u>* and add them to the Docker Image specified as destination
 
