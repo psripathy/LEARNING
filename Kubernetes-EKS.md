@@ -1,9 +1,9 @@
-###Tools
+### Tools
 
-  eksctl - AWS CLI for Amazon EKS
+- eksctl - AWS CLI for Amazon EKS
 
-  kubectl
+- kubectl - CLI to work with Kubernetes Control plane
 
-  awscli
+- awscli
 
-  k9s - Kubernetes CLI
+- k9s - Terminal based UI to interact with your Kubernetes clusters
