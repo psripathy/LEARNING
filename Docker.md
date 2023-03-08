@@ -151,6 +151,7 @@ The Dockerfile is essentially the build instructions to build the image.
 - Scan Image: ***docker scan <image-name>***
 - Ignore files to be copied when building docker image - Use ***.dockerignore*** file
 - Extract docker image 
+    
     docker create --name="tmp_$$" image:tag
     docker export tmp_$$ > img.tar
     tar -xf img.tar
