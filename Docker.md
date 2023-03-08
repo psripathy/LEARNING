@@ -150,6 +150,7 @@ The Dockerfile is essentially the build instructions to build the image.
 - Run a Docker Container in a network: ***docker run -d --network <network-name> --network-alias <network-alias>  -v todo-mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=todos mysql:5.7***
 - Scan Image: ***docker scan <image-name>***
 - Ignore files to be copied when building docker image - Use ***.dockerignore*** file
+- [Execute command on host from docker container](https://stackoverflow.com/questions/32163955/how-to-run-shell-script-on-host-from-docker-container)
 - Extract docker image 
     
     docker create --name="tmp_$$" image:tag
