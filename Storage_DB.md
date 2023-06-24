@@ -92,6 +92,6 @@ https://www.thorntech.com/sql-vs-nosql/
 - Write requests goes only to master, hence less scalable for write operation **Vs** Multiple master node makes writing more scalable
 - Possibility of downtime (20-30 secs) when the master goes down until the slave becomes master **Vs** because of multiple master it is highly available
 - Availability of Secondary Index makes querying faster **Vs** Only cursory support for secondary index
-- Suuports BSON, JSON data format **Vs** JSON only
+- Supports BSON, JSON data format **Vs** JSON only
 - Supports unstructured/nested data **Vs** Data still stored in rows/cols (just not relational)
 - Both support Sharding/Horizontal Partitioning
