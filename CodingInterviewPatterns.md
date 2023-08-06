@@ -9,8 +9,8 @@
      - the first x% of the elements in a linked list, or,
      - the element at the k-way point in a linked list, for example, the middle element, or the element at the start of the second quartile, etc.
      - the k-th last element in a linked list
-  - Solving the problem requires detecting the presence of a cycle in a linked list.
-  - Solving the problem requires detecting the presence of a cycle in a sequence of symbols.
+  - Detecting the presence of a cycle in a linked list.
+  - Detecting the presence of a cycle in a sequence of symbols.
 
    
 **3. Sliding Window** 
