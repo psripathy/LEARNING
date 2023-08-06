@@ -5,6 +5,7 @@
   
 **2. Fast and Slow Pointer**
   - Either as an intermediate step, or as the final solution, the problem requires identifying:
+     - the middle of the input array/list 
      - the first x% of the elements in a linked list, or,
      - the element at the k-way point in a linked list, for example, the middle element, or the element at the start of the second quartile, etc.
      - the k-th last element in a linked list
