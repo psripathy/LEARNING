@@ -13,4 +13,4 @@
 
    
 **3. Sliding Window**
-  - Find/Calculate things like min, max, longest, shortest, contained on data that we can sequentially iterate over like String, Array, LinkedList
+  - Find/Calculate things like min, max, longest, shortest, contained, substring, subarray on data that we can sequentially iterate over like String, Array, LinkedList
