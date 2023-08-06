@@ -12,5 +12,5 @@
   - Solving the problem requires detecting the presence of a cycle in a sequence of symbols.
 
    
-**3. Sliding Window**
+**3. [Sliding Window] (https://www.youtube.com/watch?v=MK-NZ4hN7rs)** 
   - Find/Calculate things like min, max, longest, shortest, contained, substring, subarray on data that we can sequentially iterate over like String, Array, LinkedList
