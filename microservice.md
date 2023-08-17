@@ -20,7 +20,7 @@
         Break long transactions into a series of local transactions. A central component SAGA Execution Controller(SEC) controls the local transactions and rollback events.
 
         1. Orchestration Based SAGA
-            - A single Orchestrator acts as a centralized controller of all these local transactions and maintains the status of individual & complete transaction. It can rollback on failure at a certain point or commit at the end and send confirmation.
+            - A single Orchestrator acts as a centralized controller of all these local transactions and maintains the status of individual & complete transaction. It can rollback on failure at a certain point or commit at the end and send status for both cases at the end of it.
               <img src="./images/orch-saga.png" width="70%" height="10%">. 
         2. Coreography Based Saga
             - Each Microservice is responsible for generating a new event. And it will trigger the transaction of the next Microservice. Saga execution controller keeps track of all these events using the SEC log and executes rollback events in case of a failure.
