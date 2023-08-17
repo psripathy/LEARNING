@@ -21,4 +21,7 @@
 
         1. Orchestration Based SAGA
             - A single Orchestrator acts as a centralized controller of all these local transactions and maintains the status of individual & complete transaction. It can rollback on failure at a certain point or commit at the end and send confirmation.
+              <img src="./images/orch-saga.png" width="100%" height="60%">. 
         2. Coreography Based Saga
+            - Each Microservice is responsible for generating a new event. And it will trigger the transaction of the next Microservice. Saga execution controller keeps track of all these events using the SEC log and executes rollback events in case of a failure.
+              <img src="./images/coreo-saga.png" width="100%" height="60%">. 
