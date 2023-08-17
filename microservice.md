@@ -33,4 +33,10 @@
 
   - Separate Data Models for Read and Write Operations
   - For greater isolation, Read and Write database can be separate entities (even different DB Types for Read Vs Write - SQL/NoSQL DB)
+  - Advantages
+    - Independent scaling
+    - Data Modeling
+    - Security
+    - Simpler Queries
+    - Maintainable by Separation of Concerns   
   
