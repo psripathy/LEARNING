@@ -30,4 +30,7 @@
 - [CQRS Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs) - Command and Query Responsibility Segregation
   
   https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/cqrs-pattern.html
+
+  - Separate Data Models for Read and Write Operations
+  - For greater isolation, Read and Write database can be separate entities (even different DB Types for Read Vs Write - SQL/NoSQL DB)
   
