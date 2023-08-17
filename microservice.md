@@ -15,7 +15,7 @@
              - Multiple nodes are actively serving requests, either reading or writing. All the nodes are capable of reading and writing data. Updates can be made to any node and gradually propagated to other nodes
                
 -  Handling Transactions in Eventual Consistency
-    - [SAGA pattern](https://blog.bitsrc.io/how-to-use-saga-pattern-in-microservices-9eaadde79748)
+    - [SAGA pattern](https://blog.bitsrc.io/how-to-use-saga-pattern-in-microservices-9eaadde79748) Apache Camel, AWS Step Functions can help implement SAGA
       
         Break long transactions into a series of local transactions. A central component SAGA Execution Controller(SEC) controls the local transactions and rollback events.
 
