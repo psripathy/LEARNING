@@ -15,7 +15,7 @@
              - Multiple nodes are actively serving requests, either reading or writing. All the nodes are capable of reading and writing data. Updates can be made to any node and gradually propagated to other nodes
                
 -  Handling Transactions in Eventual Consistency
-    - [SAGA pattern](https://blog.bitsrc.io/how-to-use-saga-pattern-in-microservices-9eaadde79748) Apache Camel, AWS Step Functions can help implement SAGA
+    - [SAGA pattern](https://blog.bitsrc.io/how-to-use-saga-pattern-in-microservices-9eaadde79748) : Apache Camel, AWS Step Functions can help implement SAGA
       
         Break long transactions into a series of local transactions. A central component SAGA Execution Controller(SEC) controls the local transactions and rollback events.
 
@@ -24,4 +24,10 @@
               <img src="./images/orch-saga.png" width="70%" height="10%">. 
         2. Coreography Based Saga
             - Each Microservice is responsible for generating a new event. And it will trigger the transaction of the next Microservice. Saga execution controller keeps track of all these events using the SEC log and executes rollback events in case of a failure.
-              <img src="./images/coreo-saga.png" width="70%" height="10%">. 
+              <img src="./images/coreo-saga.png" width="70%" height="10%">.
+
+
+- [CQRS Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs) - Command and Query Responsibility Segregation
+  
+  https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/cqrs-pattern.html
+  
