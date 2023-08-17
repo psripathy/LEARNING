@@ -1,0 +1,1 @@
+JHipster - https://www.jhipster.tech/
