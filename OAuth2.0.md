@@ -5,6 +5,11 @@
     
 <img src="./images/oauth__flow.png" width="70%" height="10%">
   
+## Grant Types in OAuth 2.0
+
+Authorization Code Grant
+- The Authorization server returns single use Access Code to the client which is then exchanged for Access token. Best option for **Traditional Web apps** where exchange can happen securely on server side
+
 
 ## Authorization Code Flow with PKCE (Proof Of KeyCode Exchange)
 
