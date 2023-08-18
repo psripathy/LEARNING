@@ -1,7 +1,7 @@
 # [OAuth 2.0](https://auth0.com/intro-to-iam/what-is-oauth-2)
     Is an authorization protocol and NOT an authentication protocol
 
-    OAuth defines 4 roles
+    OAuth defines 4 roles: Resource Owner, Client, Authorization Server, Resource Server
     
 <img src="./images/oauth__flow.png" width="70%" height="10%">
   
