@@ -3,7 +3,7 @@
 
     OAuth defines 4 roles
     
-<img src="./images/oauth-flow.png" width="70%" height="10%">
+<img src="./images/oauth__flow.png" width="70%" height="10%">
   
 
 ## Authorization Code Flow with PKCE (Proof Of KeyCode Exchange)
