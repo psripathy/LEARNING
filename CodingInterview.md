@@ -1,6 +1,6 @@
-Important Topics to know
+# Important Topics to know
  
- Logarithm - Math concept. 
+ [Logarithm - Math concept.](https://www.geeksforgeeks.org/math-in-competitive-programming/) 
  
  Tree traversal/Graph Traversal/Matrix Traversal/DFS & BFS. 
  
@@ -19,4 +19,6 @@ Important Topics to know
  Dynamic Programming (Hard). 
  
  Sorting Algo (Quick Sort & Merge Sort)
+
+ 
  
