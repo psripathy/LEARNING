@@ -12,3 +12,7 @@
 
 ## Example on failure at work
     Brainboard evaluation for SID modernization
+
+## How do you keep yourself updated
+    Join professional groups 
+    Reading blogs ([medium.com](https://medium.com/) is my favorite)
