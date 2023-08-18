@@ -15,4 +15,4 @@
 
 ## How do you keep yourself updated
     Join professional groups 
-    Reading blogs [medium.com](https://medium.com/) is my favorite
+    Reading blogs https://medium.com/ is my favorite
