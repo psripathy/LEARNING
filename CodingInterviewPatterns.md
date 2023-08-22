@@ -16,7 +16,13 @@
 ## 3. [Sliding Window](https://www.youtube.com/watch?v=MK-NZ4hN7rs)
   - Find/Calculate things like min, max, longest, shortest, contained, substring, subarray on data that we can sequentially iterate over like String, Array, LinkedList
 
-## 4. [Dynamic Programming](https://takeuforward.org/dynamic-programming/striver-dp-series-dynamic-programming-problems/)
+
+## 4. Recursion
+  - Problem breaks down to similar sub-problems (think Fibonacci, fib(n)=fib(n-1)+fib(n-2)
+  - Requires arbitrary number of nested loops
+
+
+## 5. [Dynamic Programming](https://takeuforward.org/dynamic-programming/striver-dp-series-dynamic-programming-problems/)
   - Used for solving optimization problems
   - Should be solved in sequence of decisions
   - 
