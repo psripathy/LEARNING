@@ -26,4 +26,24 @@ To perform a CSRF attack, a few conditions should be met.
   - Request sent to web server, server sets a token a hidden field in the form and returned to the client
   - Client should include these tokens in future requests and server verifies it
 - Same Site Cookies
-  - Cookies (session cookie) with SameSite flag is only sent along with requests that originate from the same domain, so the session cannot be hijacked. 
+  - Cookies (session cookie) with SameSite flag is only sent along with requests that originate from the same domain, so the session cannot be hijacked.
+
+
+ ## Denial Of Service
+ Attacker tries to crash an application so that the legitimate users are not able to access the application
+
+ ### Flood Attack
+ The attacker overwhelms the application with a flood of requests
+ 
+ ### Crash Attack
+ Attacker transmits a bug to the server which then takes advantage of the vulnerabilities of the server
+
+ ### Distributed Denial of Service
+ Target is attacked from many locations
+
+ ### Ways to prevent
+
+ - Black Hole Routing
+   - If the application is experiencing an unprecedented load of traffic, then all of the traffic can be routed to a black hole route
+ - Rate Limiting
+   - Limiting the number of requests a server will accept during a certain window of time 
