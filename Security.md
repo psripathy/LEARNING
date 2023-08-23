@@ -9,7 +9,7 @@ Done by executing script on users browser.
   - The attacker tricks the user into clicking a link that contains the malicious script.
   - The user may receive the malicious link through email, search results, or advertisements on another website.
 
-### Ways to avoid
+### Ways to prevent
 - Sanitizing user input
 - Validate User input before storing into DB
 
@@ -19,3 +19,11 @@ Done by executing script on users browser.
 To perform a CSRF attack, a few conditions should be met.
 - Cookie-based session handling  - User already logged into a website and it relies on cookies to identify user
 - No unpredictable request parameters
+
+### Ways to prevent
+
+- Using CSRF Token
+  - Request sent to web server, server sets a token a hidden field in the form and returned to the client
+  - Client should include these tokens in future requests and server verifies it
+- Same Site Cookies
+  - Cookies (session cookie) with SameSite flag is only sent along with requests that originate from the same domain, so the session cannot be hijacked. 
