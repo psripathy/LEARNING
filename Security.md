@@ -12,3 +12,10 @@ Done by executing script on users browser.
 ### Ways to avoid
 - Sanitizing user input
 - Validate User input before storing into DB
+
+
+## CSRF
+
+To perform a CSRF attack, a few conditions should be met.
+- Cookie-based session handling  - User already logged into a website and it relies on cookies to identify user
+- No unpredictable request parameters
