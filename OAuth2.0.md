@@ -29,5 +29,30 @@
 
 <img src="./images/auth-sequence-auth-code-pkce.png" width="70%" height="10%">
 
-## JWT Token
+
+## JWT (JSON Web) Token
+
+### Token Based Authentication
+Basic flow of token-based authentication:
+
+1. The client sends a request to the server with a username/password.
+2. The application validates the credentials and generates a secure, signed token for the client.
+3. The token is sent back to the client and stored there.
+4. When the client needs to access something new on the server, it sends the token through the HTTP header.
+5. The server decodes and verifies the attached token. If it is valid, the server sends a response to the client.
+6. When the client logs out, the token is destroyed.
+
+JWS (Signed), JWE (Encrypted)
+
+> ### JWT Structure
+    1. Header
+        The header defines 2 attributes
+        - alg: The algorithm used to sign/encrypt the token
+        - typ: the content type that is being encrypted or signed
+        {
+            "alg": "HS256",
+            "typ": "JWT"
+        }
+    2. Payload
+    3. Signature
 
