@@ -25,10 +25,9 @@
 > ### Device Authorization Flow
 - For use by apps on input-constrained devices, such as **smart TVs**.
 
-
 ## [Authorization Code Flow with PKCE (Proof Of KeyCode Exchange) with Authentication](https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-proof-key-for-code-exchange-pkce)
 
 <img src="./images/auth-sequence-auth-code-pkce.png" width="70%" height="10%">
 
-
+## JWT Token
 
