@@ -11,3 +11,15 @@ Core of Resiliency
 
 Availability 9s
 https://uptime.is/99
+
+Availability Techniques
+  Fault Domains
+    Nodes
+    AZ
+    Racks
+
+System to System Integration
+  File Exchange
+  API
+    Asynchronous/Synchronous
+  Stream/Bus
