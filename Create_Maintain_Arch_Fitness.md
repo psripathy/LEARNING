@@ -12,4 +12,5 @@ Architectural Fitness Functions
     - Used to express architectural constraints on your system. You can write code similar to Junit
       - For example detect Cyclic Dependency, 
     - This becomes an Executable Documentation for the architetural constraints of your project
+      
 Simian, CPD from PMD to detect code duplication
