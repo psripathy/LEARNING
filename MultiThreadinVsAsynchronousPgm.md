@@ -59,5 +59,5 @@ By using Virtual threads you can acheive Scalability
 
 - The functional style code is great as long as we don;t have to deal with exceptions. With exception this quickly turns into a mess.
 
-- With virtual threads(similar to async/await in JS), the structure of asynvhronous imperative style code is the same as the structure of synchrounous imperative style code.
+- With virtual threads(similar to async/await in JS) since Java 21, the structure of asynvhronous imperative style code is the same as the structure of synchrounous imperative style code.
 
