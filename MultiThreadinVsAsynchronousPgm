@@ -51,3 +51,13 @@ In Java, the same thing can be acheived using Virtual threads
 
 By using Virtual threads you can acheive Scalability 
 
+- In the past the structure of imperative style parallel code was very different from the structure of imperative style sequential  code.
+
+- With parallel streams since Java 8, the structure of functional style parallel code is the same as the structure of the functional style sequential code.
+
+- With CompletableFuture (similar to JS Promises), the structure of functional style asynchronous code is the same as the structure of funtional style synchronous code.
+
+- The functional style code is great as long as we don;t have to deal with exceptions. With exception this quickly turns into a mess.
+
+- With virtual threads(similar to async/await in JS), the structure of asynvhronous imperative style code is the same as the structure of synchrounous imperative style code.
+
