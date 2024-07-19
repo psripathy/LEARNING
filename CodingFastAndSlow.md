@@ -4,4 +4,5 @@ Characterizing
 Reclaimi - Software
 
 Developer Poductivity Engineering
+
 speaking.jbaru.ch
