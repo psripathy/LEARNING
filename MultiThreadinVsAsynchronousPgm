@@ -49,3 +49,5 @@ async function call(n) {
 
 In Java, the same thing can be acheived using Virtual threads
 
+By using Virtual threads you can acheive Scalability 
+
