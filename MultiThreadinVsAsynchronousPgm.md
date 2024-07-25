@@ -34,6 +34,7 @@ then, catch pattern makes it hard to track the flow of the program
 Java 8 - Completable Future === Promises in JS
 
 JS - non blocking
+
 async function call(n) {
  try{   
     const result = await compute(2);
