@@ -7,16 +7,40 @@
   5. Can be used in vaious scenarios including migration, addressing security vulnerabilities, SonarQube issues etc
 
 ### Architectural Patterns: Messaging
+  #### Domain Driven Design (DDD)
+  1. Ubiqutous Language (Helps define the *Problem Space*)
+     - Identify your business language by talking to domain experts and figure out the language they use like what do they call a certain process.
+     - Getting these formal terms down basically describes the business model. For example you can identify what a User/Quote means and what a booking means
+  2. Create Bounded Context (*Solution Space*)
+     - This is the technical solution space where we create solutions for items from the problem space
+     - Identify Domains & Sub domains from the UL.
+       - Domain
+         - Represents the business problem. eg. Vehicle
+       - Sub Domain
+         - Smaller division of Domain. For ex. Quote, Order
+         - Sub domains have explicit reponsibilities and does only 1 thing so we can draw boundaries around them called bounded context        
+     - Bounded context will have
+       - Value Objects (Domain Object)
+         - Immutable Records. VO help reduce primitive obsession
+       - Entities (Domain Object)
+       - Aggregate Relationship
+         - Manages cluster of domain objects. Think a class Album { private Artist artist, private List<Track> tracks;}
+         - Transactions should not cross aggregate boundaries.
+       - Domain Services
+         - Stateless objects that implements domain/business logic. Ex. Calculate tax rate for the order.
+       - Application Services
+         - Contains application/system specific logic like validating user security, calling domain services passing the domain objects
+         - Makes use of repositories
 
 ### Patterns for Microservices
-   - Usual literature on Monoliths are not inherently bad and microservices the only right solution. Strong emphasis on Monolith vs Microservice decision should be based on business needs.
+   - Usual literature on Monoliths are not inherently bad and microservices is not the solution for all cases. Strong emphasis on Monolith vs Microservice decision should be based on business needs.
    - Cases for microservice
       - Business Agility. If business needs changes frequently.
       - Separation of Concerns.
       - Different part of the app has different architectural needs. (for example a certain part of the app needs more emphasis security, another part needs more performance and a different part needs extreme scale)
       - Business revenue should justify building microservices since building one is costly      
    - Best Practices
-     -  Microservices should not make fine-grained call to other microservices. What it means is if a service makes a call to another service it should be able to complete the transaction with that response. Should not be going back-and-forth to get information to complete the transaction. This would also mean fewer network calls and decreased latency
+     -  Microservices should not make fine-grained call to other microservices. What it means is if a service makes a call to another service it should be able to complete the transaction with that response. Should not be going back-and-forth to get information to complete the transaction. This would also mean fewer network calls and decreased latency.
      - Business requirement should drive technology decisions. For example, Why synchronous vs Asynchronous? If synchronous satisfies your business req, stick with it because it is simpler to implement and handle errors/exception. Also the technology used matters which changes this. For example Asynchronous programming in Java 21 is simpler which changes the equation.
      - Handle network failures gracefully so you can build a resilient system. Never make calls without specifying timeouts. Always use techniques like Circuit breaker
      - Performance - Question should always be is it adequate and not super fast?
@@ -52,10 +76,10 @@
     - 
 ### Coding Slow And Fast
     - This is more of a theoritical session where he talked about how to work efficiently
-    - Talked about how out brain works, fast (section 1, more intuitive) and slow (section 2, more analytical).
-    - How to engage slow/section 2 of the brain by cutting out distractions, avoiding multi tasking, blocking calendar, employing techniques like Pomodoro.
+    - Talked about how out brain works, section 1 (fast, more intuitive) and section 2 (slow but more analytical).
+    - How to engage section 2 of the brain by cutting out distractions, avoiding multi tasking, blocking calendar, employing techniques like Pomodoro.
     
 ### Multithreading Vs Asynchronous Programming
-    - Talk centered around the how early multi threading worked and then when it became blocking and hanging on to resource and ultimately creating deadlocks making it tricky to use. Then with parallel(stream)/concurrent programming(CompletableFuture) it was better until we had to handle exceptions. The functional approach made handling exceptions difficult. With virtual threads(similar to async/await in JS) since Java 21, the structure of asynchronous imperative style code started to look more like synchronous imperative style coding.
+    - Talk centered around the how early multi threading worked and then when it became blocking and hanging on to resource and ultimately creating deadlocks making it tricky to use. Then with parallel(stream)/concurrent programming(CompletableFuture) it was better until we had to handle exceptions. The functional approach made handling exceptions difficult. With Java 21 virtual threads(similar to async/await in JS), the structure of asynchronous imperative style code started to look more like synchronous imperative style coding.
     - A lot of emphasis on immutability of objects in functional programming.
     - Strong emphasis on TDD.
