@@ -1,4 +1,4 @@
-Automated Software Refactoring
+### Automated Software Refactoring
   1. Use Open Rewrite to create recipies for your project or you can use from the set of avaialble recipies
   2. Recipies are nothing but set of rules/operations that you can apply on your code to perform say a migration operation.
      - Recipies can be written in multiple languages including Java
@@ -6,9 +6,9 @@ Automated Software Refactoring
   4. You can connect your repository to their service and then you can start appying the recipies written on your project or dry run, analyze results and review the changes and you can even commit the changes from here
   5. Can be used in vaious scenarios including migration, addressing security vulnerabilities, SonarQube issues etc
 
-2. Architectural Patterns: Messaging
+### Architectural Patterns: Messaging
 
-3. Patterns for Microservices
+### Patterns for Microservices
    - Usual literature on Monoliths are not inherently bad and microservices the only right solution. Strong emphasis on Monolith vs Microservice decision should be based on business needs.
    - Cases for microservice
       - Business Agility. If business needs changes frequently.
@@ -27,19 +27,19 @@ Automated Software Refactoring
      - Business transactions(long running) should be stitched together using technical transactions(short) - SAGA pattern. Handle Failures using Retries/Compensating transactions.
      - Make the services immutable. For updated/new versions of service bring the new services up as seperate instance before killing the current service.
             
-4. Becoming an Architect
+### Becoming an Architect
 
-5. Scaling up with Virtual Threads
+### Scaling up with Virtual Threads
 
-6. Learn to Think Functionally
+### Learn to Think Functionally
    - Lot of talk about the evolution of 
       
-7. Intelligent Spring Applications
+### Intelligent Spring Applications
     - Went in with a different expectation but this was mostly about using Spring libraries to connect to OpenAI. This is still the begining phase but nice to know kind of thing. 
       
-8. Mastering Solutions
+### Mastering Solutions
 
-9. Creating and Maintaining Architectural Fitness Functions
+### Creating and Maintaining Architectural Fitness Functions
     - This talk was mostly about how to maintain the architectural integrity of the project.
     - Create ADR (Architecture Decision Records)
     - Strong emphasis on Getting Feedback which is the base of Agile development. Some example of Feed back are Junit, SonarQube etc which gives you feedback about the integrity and quality of the code 
@@ -48,14 +48,14 @@ Automated Software Refactoring
     - Strong emphasis on maintaining code coverage, atleast start by establishing the current base line and failing CI builds if we fall below that percentage and slowly building on top of it.
     - Strong emphasis on TDD
     
-10. Agile Architecture
+### Agile Architecture
     - 
-11. Coding Slow And Fast
+### Coding Slow And Fast
     - This is more of a theoritical session where he talked about how to work efficiently
     - Talked about how out brain works, fast (section 1, more intuitive) and slow (section 2, more analytical).
     - How to engage slow/section 2 of the brain by cutting out distractions, avoiding multi tasking, blocking calendar, employing techniques like Pomodoro.
     
-12. Multithreading Vs Asynchronous Programming
+### Multithreading Vs Asynchronous Programming
     - Talk centered around the how early multi threading worked and then when it became blocking and hanging on to resource and ultimately creating deadlocks making it tricky to use. Then with parallel(stream)/concurrent programming(CompletableFuture) it was better until we had to handle exceptions. The functional approach made handling exceptions difficult. With virtual threads(similar to async/await in JS) since Java 21, the structure of asynchronous imperative style code started to look more like synchronous imperative style coding.
     - A lot of emphasis on immutability of objects in functional programming.
     - Strong emphasis on TDD.
