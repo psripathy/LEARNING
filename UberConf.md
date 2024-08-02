@@ -7,11 +7,13 @@
   5. Can be used in vaious scenarios including migration, addressing security vulnerabilities, SonarQube issues etc
 
 ### Architectural Patterns: Messaging
+
+[ArchitecturalPatternsFocusMessaging.pdf](https://github.com/user-attachments/files/16476138/ArchitecturalPatternsFocusMessaging.pdf)
   #### Domain Driven Design (DDD)
-  1. Ubiqutous Language (Helps define the *Problem Space*)
+  1. Ubiqutous Language (Helps define the **Problem Space**)
      - Identify your business language by talking to domain experts and figure out the language they use like what do they call a certain process.
      - Getting these formal terms down basically describes the business model. For example you can identify what a User/Quote means and what a booking means
-  2. Create Bounded Context (*Solution Space*)
+  2. Create Bounded Context (**Solution Space**)
      - This is the technical solution space where we create solutions for items from the problem space
      - Identify Domains & Sub domains from the UL.
        - Domain
@@ -31,7 +33,60 @@
        - Application Services
          - Contains application/system specific logic like validating user security, calling domain services passing the domain objects
          - Makes use of repositories
+  3. DDD by EventStorming
+     - Brainstorm to model business process
+     - Identify series of domain events over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
+     - Step 1: Identifying Events(Flow)
+       - Identify events that happen in the business and represent them in the past. eg. Request Submitted, Req Approved, Req Declined, Order Received, Order Shipped, Order Cancelled.
+       - Represent the events in a Kanban flow (Events can be separated into groups here).
+       - Also identify the Paint points if any with any given event.
+       - Identify logical/pivotal events of the business flow and with that you will be able to create a swim lane diagram based on the pivotal events. eg. Shopping Cart Initialized[...] -> Order Initialized[...] -> Order Shipped[...] -> Order Received[...]
+       - The swimming lane will become boundaries of your microservices.
+       - This can also give you idea about what becomes messages.
+     - Step 2:
+       - Identify the **Actor** and **Command** that will start the events
+       - **Policy** - automation that triggers the event based on the command. eg. For a Submit Order command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order 
+      ![image](https://github.com/user-attachments/assets/4414e4df-9822-4687-b621-41703cc25e52)
 
+        *Blue - Command*, *Orange - Events*, *Pink - Policy*
+
+  4. Event Sourcing - Why events are used as messages?
+     - Problem with traditional approach is with the CRUD databases when something changes records get overwritten, so no log of previous information.
+     - Events are recorded on **append only** store (hence immutable) so you can go back in time to see what lead to the current state.
+       ![image](https://github.com/user-attachments/assets/80959d9f-d864-4b25-b93e-cfecd71e886e)
+     - TradeOffs
+       - Eventual Consistency
+       - Might be overkill if you don't need audit trails, history, rollback
+         
+  5. Event Driven Architecture (EDA)
+     - System components communicate asynchronously by exchanging event messaging (publish-subscribe)
+     - EDA vs Event Sourcing
+       - EDA = Communication between services
+       - Event Sourcing = Happens inside a service. Events designed for event sourcing represent state transitions implemented inside the service.
+     - Event Vs Event Notification Vs Command - Types of messages
+       - **Event**
+         - Message that describes a significant change or occurance already happened.
+         - Can be critical for system operation and can trigger workflow or state changes
+         - An event cannot be cancelled.
+         - Structure of event message.
+         - ![image](https://github.com/user-attachments/assets/2585b9b3-6f17-494f-bc87-5a7be0dcd544)
+
+       - **Event Sourcing**
+         - Message that primarily informs subscribers of generally less critical events.
+         - Primarily for awareness, logging or optional actions
+       - **Command**
+         - Message that describes an operation that has to be carried out.
+         - Command can be rejected.
+           
+   6. Claim Check
+      - Messaging systems cannot handle large payloads
+      - Solution:
+        - Send a **Claim check** (an identifier) to the messaging sytem and store the payload in an external storage.
+        - Send the Claim check in the message to the message broker.
+        - The consumer of the message will use the Claim Check to retrive the message.
+          
+   7. Event Notification
+       
 ### Patterns for Microservices
    - Usual literature on Monoliths are not inherently bad and microservices is not the solution for all cases. Strong emphasis on Monolith vs Microservice decision should be based on business needs.
    - Cases for microservice
