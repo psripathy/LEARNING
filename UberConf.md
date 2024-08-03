@@ -86,7 +86,7 @@
          - Eg. Payroll published.
     
        - **Event carried State Transfer (ECST)**
-         - Event that carries full state/updated fields of the entity enabling (and expected) subscribers to update their state based on the event.
+         - Event that carries full state/updated fields of the entity enabling subscribers to update(expected) their state based on the event.
          - Allows consumers to cache entity state (as aggregate), which can also make consumers fault tolerant because the consumers can funtion with cached data even if the producer goes down.
          - eg. Product price or inventory level changed and all services need to update their local state.
 
