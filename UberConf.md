@@ -31,8 +31,8 @@
        - Domain Services
          - Stateless objects that implements domain/business logic. Ex. Calculate tax rate for the order.
        - Application Services
-         - Contains application/system specific logic like validating user security, calling domain services passing the domain objects
-         - Makes use of repositories
+         - Contains application/system specific logic like validating user security, calling domain services passing them domain objects.
+         - Makes use of repositories.
   3. DDD by EventStorming
      - Brainstorm to model business process
      - Identify series of domain events over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
