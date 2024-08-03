@@ -63,21 +63,7 @@
      - EDA vs Event Sourcing
        - EDA = Communication between services
        - Event Sourcing = Happens inside a service. Events designed for event sourcing represent state transitions implemented inside the service.
-     - Event Vs Event Notification Vs Command - Types of messages
-       - **Event**
-         - Message that describes a significant change or occurance already happened.
-         - Can be critical for system operation and can trigger workflow or state changes
-         - An event cannot be cancelled.
-         - Structure of event message.
-         - ![image](https://github.com/user-attachments/assets/2585b9b3-6f17-494f-bc87-5a7be0dcd544)
-
-       - **Event Sourcing**
-         - Message that primarily informs subscribers of generally less critical events.
-         - Primarily for awareness, logging or optional actions
-       - **Command**
-         - Message that describes an operation that has to be carried out.
-         - Command can be rejected.
-           
+                    
    6. Claim Check
       - Messaging systems cannot handle large payloads
       - Solution:
@@ -85,8 +71,42 @@
         - Send the Claim check in the message to the message broker.
         - The consumer of the message will use the Claim Check to retrive the message.
           
-   7. Event Notification
-       
+   7. Types of Messages - Event Vs Event Notification Vs ECST Vs Command
+       - **Event**
+         - Message that describes a significant change or occurance already happened.
+         - Can be critical for system operation and can trigger workflow or state changes.
+         - Eg. Order placed - Other services like inventory, billing, shipping should react.
+         - An event cannot be cancelled.
+         - Structure of event message.
+         - ![image](https://github.com/user-attachments/assets/2585b9b3-6f17-494f-bc87-5a7be0dcd544)
+           
+       - **Event Notification**
+         - Message that primarily informs subscribers of generally less critical events.
+         - Primarily for awareness, logging or optional actions.
+         - Eg. Payroll published.
+    
+       - **Event carried State Transfer (ECST)**
+         - Event that carries full state/updated fields of the entity enabling (and expected) subscribers to update their state based on the event.
+         - Allows consumers to cache entity state (as aggregate), which can also make consumers fault tolerant because the consumers can funtion with cached data even if the producer goes down.
+         - eg. Product price or inventory level changed and all services need to update their local state.
+
+       - **Domain Events**
+         - Halfway between Event Notifications and ECST but not intended to describe aggregate state.
+         - To capture and communicate changes in domain model and subscribers may update domain state, trigger workflows or handle side effects.
+         - eg. A customers address has changed and you may need to trigger additional events for that rather than just a synchronization of price as in ECST.
+                       
+       - **Command**
+         - Message that describes an operation that has to be carried out.
+         - Command can be rejected.
+        
+   8.Materialized View
+     - Are Database objects that physically store the results of the query allowing faster reads and complex aggregations.
+     - eg. When order is placed an event is published to event broker which the consumer is listening for and updates it's materialized view (order count for the customer state, think woot selling map).
+     
+   9. CQRS (Command & Query Responsibility Seggregation)
+      - Seperation of READ & write databases.
+      - Write to write only DB and event streaming updates the READ database .
+      
 ### Patterns for Microservices
    - Usual literature on Monoliths are not inherently bad and microservices is not the solution for all cases. Strong emphasis on Monolith vs Microservice decision should be based on business needs.
    - Cases for microservice
