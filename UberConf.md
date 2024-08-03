@@ -11,7 +11,7 @@
 [ArchitecturalPatternsFocusMessaging.pdf](https://github.com/user-attachments/files/16476138/ArchitecturalPatternsFocusMessaging.pdf)
   #### Domain Driven Design (DDD)
   1. Ubiqutous Language (Helps define the **Problem Space**)
-     - Identify your business language by talking to domain experts and figure out the language they use like what do they call a certain process.
+     - Identify your business language by talking to domain experts and figure out the language they use, like what do they call a certain process.
      - Getting these formal terms down basically describes the business model. For example you can identify what a User/Quote means and what a booking means
   2. Create Bounded Context (**Solution Space**)
      - This is the technical solution space where we create solutions for items from the problem space
