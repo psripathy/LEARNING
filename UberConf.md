@@ -45,7 +45,8 @@
        - This can also give you idea about what becomes messages.
      - Step 2:
        - Identify the **Actor** and **Command** that will start the events
-       - **Policy** - automation that triggers the event based on the command. eg. For a Submit Order command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order 
+       - **Policy** - automation that triggers the event based on the command. eg. For a Submit Order command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order
+         
       ![image](https://github.com/user-attachments/assets/4414e4df-9822-4687-b621-41703cc25e52)
 
         *Blue - Command*, *Orange - Events*, *Pink - Policy*
