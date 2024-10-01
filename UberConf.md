@@ -130,9 +130,6 @@
 ### Becoming an Architect
 
 ### Scaling up with Virtual Threads
-
-### Learn to Think Functionally
-   - Lot of talk about the evolution of 
       
 ### Intelligent Spring Applications
     - Went in with a different expectation but this was mostly about using Spring libraries to connect to OpenAI. This is still the begining phase but nice to know kind of thing. 
@@ -147,6 +144,12 @@
     - Adivsed to cleanup warning on the project (examples of warnings being actual bug in the code)
     - Strong emphasis on maintaining code coverage, atleast start by establishing the current base line and failing CI builds if we fall below that percentage and slowly building on top of it.
     - Strong emphasis on TDD
+        ~~~
+        ArchRule r1 = noClasses()
+      .that().resideInAPackage("..presentation..")
+      .should().dependOnClassesThat()
+      .resideInAPackage("..persistence..");
+         ~~~~
     
 ### Agile Architecture
     - 
