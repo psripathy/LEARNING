@@ -10,11 +10,10 @@
 
 [ArchitecturalPatternsFocusMessaging.pdf](https://github.com/user-attachments/files/16476138/ArchitecturalPatternsFocusMessaging.pdf)
   #### Domain Driven Design (DDD)
-  1.‘Domain’ refers to the problem space the software is meant to address. Ex. Fleet Rental. Key concepts of DDD are
-  
-      - Domain: The business problem the software is trying to solve. eg., Car Rental Management.
-      - Core Domain: This is the part of the business that delivers most value to the company. eg., Contract Management, Pricing & Billing, Fleet Ordering/Allocation, CRM etc.
-      - Subdomains: This is the part that supports the core domains and have explicit responsibilities. eg., Fleet Maintenance/Repair, AME, Insurance & Compliance, Logistics & Vehicle Tracking.
+  1.‘Domain’ refers to the problem space or the business problem the software is meant to address. Ex. Fleet Rental Management. Key concepts of DDD are Core Domains & Sub Domains.
+     
+     - Core Domain: This is the part of the business that delivers most value to the company.
+     - Subdomains: This is the part that supports the core domains and have explicit responsibilities. 
       
   2. Ubiqutous Language (Helps define the **Problem Space**)
      - Is the shared vocabulary that is understood by both technical & non-technical stakeholders understand. Reflects the core concepts and processes within the domain. 
@@ -26,11 +25,11 @@
             
   3. Create Bounded Context (**Solution Space**)
      - This is the technical solution space where we create solutions for items from the problem space. It provides clear boundaries around specific parts of the system and making sure the concepts are not confused across different areas.
-     - Identify Domains & Sub domains from the UL.
-       - Domain
-         - Represents the business problem. eg. Vehicle
+     - Identify Core Domains & Sub domains from the UL.
+       - Core Domain
+         - Represents the business problem. eg., Contract Management, Pricing & Billing, Vehicle Ordering/Allocation, CRM etc.
        - Sub Domain
-         - Smaller division of Domain. For ex. Quote, Order
+         - Smaller division of Domain. eg., Fleet Maintenance/Repair, AME, Mileage Allocation, Insurance & Compliance, Logistics & Vehicle Tracking etc
          - Sub domains have explicit reponsibilities and does only 1 thing so we can draw boundaries around them called bounded context        
      - Bounded context will have
        - Value Objects (Domain Object)
