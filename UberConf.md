@@ -10,10 +10,14 @@
 
 [ArchitecturalPatternsFocusMessaging.pdf](https://github.com/user-attachments/files/16476138/ArchitecturalPatternsFocusMessaging.pdf)
   #### Domain Driven Design (DDD)
-  1. Ubiqutous Language (Helps define the **Problem Space**)
+  1.‘Domain’ refers to the problem space the software is meant to address. Ex. Fleet Rental. Key concepts of DDD are Domain, Core Domain, Subdomains
+      - Domain: The business problem the software is trying to solve. eg., Car Rental Management
+      - Core Domain: This is the part of the business that delivers most value to the company. eg., Contract Management, Pricing & Billing, Fleet Availability/ Allocation, CRM etc.
+      - Subdomains: This is the part that supports the core domains. eg., Fleet Maintenance/Repair, Insurance & Compliance, Inventory Management, Logistics & Vehicle Tracking
+  2. Ubiqutous Language (Helps define the **Problem Space**)
      - Identify your business language by talking to domain experts and figure out the language they use, like what do they call a certain process.
      - Getting these formal terms down basically describes the business model. For example you can identify what a User/Quote means and what a Booking means
-  2. Create Bounded Context (**Solution Space**)
+  3. Create Bounded Context (**Solution Space**)
      - This is the technical solution space where we create solutions for items from the problem space
      - Identify Domains & Sub domains from the UL.
        - Domain
@@ -33,7 +37,7 @@
        - Application Services
          - Contains application/system specific logic like validating user security, calling domain services passing them domain objects.
          - Makes use of repositories.
-  3. DDD by EventStorming
+  4. DDD by EventStorming
      - Brainstorm to model business process
      - Identify series of domain events over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
      - Step 1: Identifying Events(Flow)
@@ -51,7 +55,7 @@
 
         *Blue - Command*, *Orange - Events*, *Pink - Policy*
 
-  4. Event Sourcing - Why events are used as messages?
+  5. Event Sourcing - Why events are used as messages?
      - Problem with traditional approach is with the CRUD databases when something changes records get overwritten, so no log of previous information.
      - Events are recorded on **append only** store (hence immutable) so you can go back in time to see what lead to the current state.
        ![image](https://github.com/user-attachments/assets/80959d9f-d864-4b25-b93e-cfecd71e886e)
@@ -59,20 +63,20 @@
        - Eventual Consistency
        - Might be overkill if you don't need audit trails, history, rollback
          
-  5. Event Driven Architecture (EDA)
+  6. Event Driven Architecture (EDA)
      - System components communicate asynchronously by exchanging event messaging (publish-subscribe)
      - EDA vs Event Sourcing
        - EDA = Communication between services
        - Event Sourcing = Happens inside a service. Events designed for event sourcing represent state transitions implemented inside the service.
                     
-   6. Claim Check
+   7. Claim Check
       - Messaging systems cannot handle large payloads
       - Solution:
         - Send a **Claim check** (an identifier) to the messaging sytem and store the payload in an external storage.
         - Send the Claim check in the message to the message broker.
         - The consumer of the message will use the Claim Check to retrive the message.
           
-   7. Types of Messages - Event Vs Event Notification Vs ECST Vs Command
+   8. Types of Messages - Event Vs Event Notification Vs ECST Vs Command
        - **Event**
          - Message that describes a significant change or occurance already happened.
          - Can be critical for system operation and can trigger workflow or state changes.
