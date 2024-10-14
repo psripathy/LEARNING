@@ -14,9 +14,11 @@
       - Domain: The business problem the software is trying to solve. eg., Car Rental Management
       - Core Domain: This is the part of the business that delivers most value to the company. eg., Contract Management, Pricing & Billing, Fleet Availability/ Allocation, CRM etc.
       - Subdomains: This is the part that supports the core domains. eg., Fleet Maintenance/Repair, Insurance & Compliance, Inventory Management, Logistics & Vehicle Tracking
+      
   2. Ubiqutous Language (Helps define the **Problem Space**)
      - Identify your business language by talking to domain experts and figure out the language they use, like what do they call a certain process.
      - Getting these formal terms down basically describes the business model. For example you can identify what a User/Quote means and what a Booking means
+       
   3. Create Bounded Context (**Solution Space**)
      - This is the technical solution space where we create solutions for items from the problem space
      - Identify Domains & Sub domains from the UL.
@@ -37,6 +39,7 @@
        - Application Services
          - Contains application/system specific logic like validating user security, calling domain services passing them domain objects.
          - Makes use of repositories.
+           
   4. DDD by EventStorming
      - Brainstorm to model business process
      - Identify series of domain events over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
