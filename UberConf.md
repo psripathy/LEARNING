@@ -11,13 +11,10 @@
 [ArchitecturalPatternsFocusMessaging.pdf](https://github.com/user-attachments/files/16476138/ArchitecturalPatternsFocusMessaging.pdf)
   #### Domain Driven Design (DDD)
   1.‘Domain’ refers to the problem space or the business problem the software is meant to address. Ex. Fleet Rental Management. Key concepts of DDD are Core Domains & Sub Domains.
-     
-     - Core Domain: This is the part of the business that delivers most value to the company.
-     - Subdomains: This is the part that supports the core domains and have explicit responsibilities. 
-      
-  2. Ubiqutous Language (Helps define the **Problem Space**)
-     - Is the shared vocabulary that is understood by both technical & non-technical stakeholders understand. Reflects the core concepts and processes within the domain. 
-     - This is basically identified in discussions with the business users.
+           
+  2. Ubiqutous Language (Strategic part of DDD. Helps define the **Problem Space**)
+     - This is basically identified in discussions with the domain experts aka business users. Ask questions like what is this process called, what are the things involved in this process and their names.
+     - It becomes the shared vocabulary that is understood by both technical & non-technical stakeholders understand. Reflects the core concepts and processes within the domain.
      - Getting these formal terms down basically describes the business model. For example you can identify key entities, processes, domain rules etc. This language will guide systems design & implementation.
      - Entities (Core business Objects): eg., Quote, Order, Customer etc.
      - Process: Invoice generation, Maintenance etc.
@@ -27,23 +24,23 @@
      - This is the technical solution space where we create solutions for items from the problem space. It provides clear boundaries around specific parts of the system and making sure the concepts are not confused across different areas.
      - Identify Core Domains & Sub domains from the UL.
        - Core Domain
-         - Represents the business problem. eg., Contract Management, Pricing & Billing, Vehicle Ordering/Allocation, CRM etc.
+         - This is the part of the business that delivers most value to the company. eg., Contract Management, Pricing & Billing, Vehicle Ordering/Allocation, CRM etc.
        - Sub Domain
-         - Smaller division of Domain. eg., Fleet Maintenance/Repair, AME, Mileage Allocation, Insurance & Compliance, Logistics & Vehicle Tracking etc
-         - Sub domains have explicit reponsibilities and does only 1 thing so we can draw boundaries around them called bounded context        
+         - This is the part that supports the core domains that have explicit responsibilities and does only 1 thing.
+         - eg., Fleet Maintenance/Repair, AME, Mileage Allocation, Insurance & Compliance etc.
      - Bounded context will have
-       - Value Objects (Domain Object)
-         - Immutable Records. VO help reduce primitive obsession
        - Entities (Domain Object)
+         - An entity is something that needs to be tracked over time and whose attributes are likely to change over time. eg. Quote which has multiple states
+       - Value Objects (Domain Object)
+         - Are objects that represents a descriptive aspect of the domain with no conceptual identity and they are defined by their attributes. eg., Vehicle
        - Aggregate Relationship
          - Manages cluster of domain objects. Think a class Album { private Artist artist, private List<Track> tracks;}
          - Transactions should not cross aggregate boundaries.
        - Domain Services
-         - Stateless objects that implements domain/business logic. Ex. Calculate tax rate for the order.
+         - Are stateless objects that implements domain/business logic. Ex. Calculate tax rate for the order.
        - Application Services
          - Contains application/system specific logic like validating user security, calling domain services passing them domain objects.
-         - Makes use of repositories.
-           
+                    
   4. DDD by EventStorming
      - Brainstorm to model business process
      - Identify series of domain events over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
