@@ -61,7 +61,7 @@
       
        ![image](https://github.com/user-attachments/assets/7542f1dc-5ac3-4444-b679-880d74e2fd24)
 
-       - **Policy** - automation that triggers due to an event based and issues a command. eg. For a Shipment Approved command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order
+       - **Policy** - automation that triggers due to an event and issues a command. eg. For a Shipment Approved command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order
       ![image](https://github.com/user-attachments/assets/644e95b0-0b19-4dde-84fe-5db39d8b58f8)
   
       ![image](https://github.com/user-attachments/assets/4414e4df-9822-4687-b621-41703cc25e52)
