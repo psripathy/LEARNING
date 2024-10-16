@@ -124,6 +124,7 @@
    9. CQRS (Command & Query Responsibility Seggregation)
       - Seperation of READ & write databases.
       - Write to write only DB and event streaming updates the READ database .
+
       
 ### Patterns for Microservices
    - Usual literature on Monoliths are not inherently bad and microservices is not the solution for all cases. Strong emphasis on Monolith vs Microservice decision should be based on business needs.
