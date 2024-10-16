@@ -24,7 +24,7 @@
      - This is the technical solution space where we create solutions for items from the problem space. It provides clear boundaries around specific parts of the system and making sure the concepts are not confused across different areas.
      - Identify Core Domains & Sub domains from the UL.
        - Core Domain
-         - This is the part of the business that delivers most value to the company. eg., Contract Management, Pricing & Billing, Vehicle Ordering/Allocation, CRM etc.
+         - This is the part of the business that delivers most value to the company. eg., Customer, Order, Vehicle etc.
        - Sub Domain
          - This is the part that supports the core domains that have explicit responsibilities and does only 1 thing.
          - eg., Fleet Maintenance/Repair, AME, Mileage Allocation, Insurance & Compliance etc.
@@ -45,16 +45,25 @@
      - Brainstorm to model business process
      - Identify the events that happen in the domain over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
      - Step 1: Identifying Events(Flow)
-       - Identify events that happen in the business and represent them in the past. eg. Request Submitted, Req Approved, Req Declined, Order Received, Order Shipped, Order Cancelled.
-       - Represent the events in a Kanban flow (Events can be separated into groups here).
-       - Also identify the Paint points if any with any given event.
-       - Identify logical/pivotal events of the business flow and with that you will be able to create a swim lane diagram based on the pivotal events. eg. Shopping Cart Initialized[...] -> Order Initialized[...] -> Order Shipped[...] -> Order Received[...] or Proposal -> Quote -> Order
+       - Identify events that happen in the business and represent them (sticky notes) in the past. eg. Request Submitted, Req Approved, Req Declined, Order Received, Order Shipped, Order Cancelled.
+       - Arrange the events in a timeline. (Rearrange sticky notes)
+
+       ![image](https://github.com/user-attachments/assets/6d283ba4-507e-461f-bfcb-3ddbee147620)
+       - Also identify the Paint points if any with any given event and mark them (with sticky notes)
+       - Identify logical/pivotal events of the business flow and with that you will be able to create a swim lane diagram based on the pivotal events.
+
+       ![image](https://github.com/user-attachments/assets/e2d733ac-093c-419e-9835-a2a48aa1cc48)
+
        - The swimming lane will become boundaries of your microservices.
        - This can also give you idea about what becomes messages.
      - Step 2:
        - Identify the **Actor** and **Command** that will start the events
-       - **Policy** - automation that triggers the event based on the command. eg. For a Submit Order command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order
-         
+      
+       ![image](https://github.com/user-attachments/assets/7542f1dc-5ac3-4444-b679-880d74e2fd24)
+
+       - **Policy** - automation that triggers due to an event based and issues a command. eg. For a Shipment Approved command that arrives as a message the policy(as a microservice) will then decide to call another service Ship Order
+      ![image](https://github.com/user-attachments/assets/644e95b0-0b19-4dde-84fe-5db39d8b58f8)
+  
       ![image](https://github.com/user-attachments/assets/4414e4df-9822-4687-b621-41703cc25e52)
 
         *Blue - Command*, *Orange - Events*, *Pink - Policy*
