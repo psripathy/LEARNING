@@ -33,8 +33,8 @@
          - An entity is something that needs to be tracked over time and whose attributes are likely to change over time. eg. Quote which has multiple states
        - Value Objects (Domain Object)
          - Are objects that represents a descriptive aspect of the domain with no conceptual identity and they are defined by their attributes. eg., Vehicle
-       - Aggregate Relationship
-         - Manages cluster of domain objects. Think a class Album { private Artist artist, private List<Track> tracks;}
+       - Aggregates
+         - Are Relation of entities. Think a class Album { private Artist artist, private List<Track> tracks;}
          - Transactions should not cross aggregate boundaries.
        - Domain Services
          - Are stateless objects that implements domain/business logic. Ex. Calculate tax rate for the order.
@@ -43,12 +43,12 @@
                     
   4. DDD by EventStorming
      - Brainstorm to model business process
-     - Identify series of domain events over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
+     - Identify the events that happen in the domain over a timeline. The model is enhanced with additional concepts by identifying actors, commands, external systems etc. These elements should tell a story about how the business process works.
      - Step 1: Identifying Events(Flow)
        - Identify events that happen in the business and represent them in the past. eg. Request Submitted, Req Approved, Req Declined, Order Received, Order Shipped, Order Cancelled.
        - Represent the events in a Kanban flow (Events can be separated into groups here).
        - Also identify the Paint points if any with any given event.
-       - Identify logical/pivotal events of the business flow and with that you will be able to create a swim lane diagram based on the pivotal events. eg. Shopping Cart Initialized[...] -> Order Initialized[...] -> Order Shipped[...] -> Order Received[...]
+       - Identify logical/pivotal events of the business flow and with that you will be able to create a swim lane diagram based on the pivotal events. eg. Shopping Cart Initialized[...] -> Order Initialized[...] -> Order Shipped[...] -> Order Received[...] or Proposal -> Quote -> Order
        - The swimming lane will become boundaries of your microservices.
        - This can also give you idea about what becomes messages.
      - Step 2:
