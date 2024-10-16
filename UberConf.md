@@ -162,6 +162,11 @@
     - Adivsed to cleanup warning on the project (examples of warnings being actual bug in the code)
     - Strong emphasis on maintaining code coverage, atleast start by establishing the current base line and failing CI builds if we fall below that percentage and slowly building on top of it.
     - Strong emphasis on TDD
+    - Key features of ArchUnit
+      - Layered Architecture training: Enforces layers like Controller, Service, Repository
+      - Dependency Rules: Controls dependencies between packages
+      - Coding Conventions: Ensure classes follow naming conventions
+      - Custom Rules: Write your own rules for architectural constraints
         ~~~
         ArchRule r1 = noClasses()
       .that().resideInAPackage("..presentation..")
