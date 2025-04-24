@@ -160,4 +160,10 @@ The Dockerfile is essentially the build instructions to build the image.
     tar -xf img.tar
     
     docker rm tmp_$$
+
+- Run docker image in interactive mode
+     docker run -it --user <uid> <imageid> /bin/bash
+
+- Step into running dicker container
+  docker exec -it --user <uid> <container-id> /bin/bash
     
